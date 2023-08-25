@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url('./images/pattern-background-desktop.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: #E0E8FF;
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		background: #E0E8FF;
+	}
+}
+
+#container-all {
+	-webkit-box-shadow: 0px 6px 13px -4px rgba(0,0,0,0.53);
+	-moz-box-shadow: 0px 6px 13px -4px rgba(0,0,0,0.53);
+	box-shadow: 0px 6px 13px -4px rgba(0,0,0,0.53);
+	border-radius: 10px 10px 10px 10px;
+	background-color: white;
+	max-width: 335px;
+	margin: 7em auto;
+}
+
+#container-image > img {
+	border-radius: 10px 10px 0px 0px;
+	width: 100%;
+}
+
+#first-content-heading {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 0.5rem;
+	max-width: 300px;
+	margin: 0 auto;
+	font-family: 'Poppins';
+	margin-top: 1.2em;
+}
+
+#plan {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 300px;
+	margin: 2em auto;
+
+	background-color: #F7F8FC;
+	border-radius: 10px;
+	padding: 0.6em 0.6em;
+}
+
+#price {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+
+	width: 100%;
+	margin-left: 1em;
+}
+
+#title-annual-price {
+	font-family: 'Poppins';
+	font-weight: 600;
+}
+
+#price-year {
+	color: #9C9FB0;
+	font-family: 'Poppins';
+	font-weight: 300;
+}
+
+#change-plan {
+	color: #3B2DE1;
+	cursor: pointer;
+	font-family: 'Poppins';
+	font-weight: 600;
+	text-decoration: underline;
+	transition: 0.5s;
+}
+
+#change-plan:hover {
+	color: #2115AC;
+	transition: 0.5s;
+}
+
+#process-payment {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1.8em;
+	padding-bottom: 1.2em;
+	margin-top: 2em;
+}
+
+.btn {
+	border: none;
+	background: transparent;
+}
+
+.payment {
+	border-radius: 15px;
+	background-color: #3B2DE1;
+	color: white;
+	cursor: pointer;
+	width: 300px;
+	margin: 0 auto;
+	padding: 0.9em 0.6em;
+	font-size: 1rem;
+	font-family: 'Poppins';
+	font-weight: 600;
+	transition: 0.5s;
+}
+
+.payment:hover {
+	background-color: #2115AC;
+	transition: 0.5s;
+}
+
+.cancel-order {
+	color: #C6CDDF;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 600;
+	transition: 0.5s;
+}
+
+.cancel-order:hover {
+	color: #AFB6C3;
+	transition: 0.5s;
+}
